@@ -51,7 +51,7 @@ public class CompliantNode implements Node {
 
     public void receiveFromFollowees(Set<Candidate> candidates) {
         this._currentRound++;
-        if (_currentRound >= _numRounds) {
+        if (_currentRound >= _numRounds-1) {
             return;
         }
         if (_oldRound > 0 && _currentRound > _oldRound) {
